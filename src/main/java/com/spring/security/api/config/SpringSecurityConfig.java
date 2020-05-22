@@ -1,4 +1,4 @@
-package com.javatechie.spring.security.api.config;
+package com.spring.security.api.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -12,8 +12,10 @@ import org.springframework.security.crypto.password.NoOpPasswordEncoder;
 public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
 	@Override
 	protected void configure(AuthenticationManagerBuilder auth) throws Exception {
-		auth.inMemoryAuthentication().withUser("Java Techie").password("Password").roles("ADMIN");
-		auth.inMemoryAuthentication().withUser("Basant").password("Password2").roles("USER");
+		auth.inMemoryAuthentication().withUser("springuser01").password(
+				"springuser01").roles("ADMIN");
+		auth.inMemoryAuthentication().withUser("springuser02").password(
+				"springuser02").roles("USER");
 	}
 
 	// security for all API
