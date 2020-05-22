@@ -7,13 +7,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/noAuth/rest")
 public class NoAuthController {
-	/**
-	 * OPEN URL Test without auth
-	 * @return
-	 */
-	@GetMapping("/sayHi")
-	public String sayHi() {
-		return "hi: No USer auth required";
-	}
+    /**
+     * OPEN URL Test without auth
+     *
+     * @return
+     */
+    @GetMapping("/sayHi")
+    public String sayHi() {
+        return "hi: No USer auth required";
+    }
 
 }

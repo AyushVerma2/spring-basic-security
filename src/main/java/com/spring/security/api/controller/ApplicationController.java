@@ -8,13 +8,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/rest/auth")
 public class ApplicationController {
 
-	/**
-	 * Test with Auth
-	 * @return
-	 */
-	@GetMapping("/getMsg")
-	public String greeting() {
-		return "spring security basic :Valid user::";
-	}
+    /**
+     * Test with Auth
+     *
+     * @return
+     */
+    @GetMapping("/getMsg")
+    public String greeting() {
+        return "spring security basic :Valid user::";
+    }
 
 }
